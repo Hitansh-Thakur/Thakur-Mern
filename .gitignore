@@ -1,0 +1,38 @@
+# General Exclusions
+node_modules/
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# OS and Editor/IDE Specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Frontend (React) - thakur-frontend
+thakur-frontend/node_modules/
+thakur-frontend/.env
+thakur-frontend/build/
+
+# Backend (Node.js/Express) - backend
+backend/node_modules/
+backend/.env
+backend/logs/
+backend/dist/
+
+# Tests and Coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# Lock Files (Optional, depending on preference)
+# Uncomment one to ignore if you're using npm or yarn or pnpm:
+# thakur-frontend/package-lock.json
+# backend/package-lock.json
+# thakur-frontend/yarn.lock
+# backend/yarn.lock
+# thakur-frontend/pnpm-lock.yaml
+# backend/pnpm-lock.yaml
