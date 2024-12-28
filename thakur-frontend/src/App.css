@@ -1,0 +1,38 @@
+.main-bg {
+	background-image: url("./bg.jpg"), linear-gradient(90deg, black, white);
+	background-blend-mode: multiply;
+}
+
+.hero-card{
+    @apply flex justify-between bg-transparent backdrop-blur-md text-orange-600 p-10 rounded-md font-bold text-4xl text-right;
+}
+main{
+    @apply pt-[7rem] w-[90%] mx-auto ;
+}
+.page-title{
+    @apply inline lg:text-[2.5rem] md:text-[2em] font-bold text-slate-800 relative w-max;
+    @apply before:h-1 before:w-1/3 before:absolute before:bg-orange-600 before:-my-[0.25em] before:rounded-full;
+}
+
+.secondary-heading{
+    @apply text-2xl font-semibold relative my-2;
+    @apply before:h-full before:w-1 before:absolute before:bg-orange-600 before:-mx-[0.5em] before:rounded-full;
+
+}
+
+.primary-btn{
+    @apply bg-orange-600 text-white px-4 py-2 rounded-md;
+    @apply hover:bg-orange-700;
+}
+
+body{
+    background-image: url("./images/bgpattern.webp");
+    @apply leading-6;
+    /* background size in tailwind */
+    @apply bg-[length:100px];
+}
+
+.active{
+    @apply text-orange-600 relative;
+    /* @apply before:h-[2px] before:w-1/2 before:absolute before:bg-orange-600 before:-my-[0.2em] before:rounded-full; */
+}
